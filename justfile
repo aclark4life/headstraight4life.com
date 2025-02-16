@@ -3,3 +3,4 @@ default:
 
 open:
     open https://headstraight4life.com
+alias o := open
