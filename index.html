@@ -1,1 +1,149 @@
-<img src="alexjaxx.jpg" alt="Alex Jaxx" width="100%" height="100%">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headstraight</title>
+<meta name="description" content="Headstraight: angst-themed alternative rock by Alex Clark, from the DC area.">
+<meta property="og:title" content="Headstraight">
+<meta property="og:description" content="Angst-themed alternative rock by Alex Clark.">
+<meta property="og:image" content="https://headstraight4life.com/alexjaxx.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --fg: #f2f2f2;
+    --muted: #9a9a9a;
+    --accent: #e63b2e;
+    --card: #181818;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  a { color: inherit; }
+
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 1rem 3rem;
+    background:
+      linear-gradient(to bottom, rgba(13,13,13,0) 40%, var(--bg) 100%),
+      url("alexjaxx.jpg") center 20% / cover no-repeat;
+  }
+  .hero h1 {
+    margin: 0;
+    font: 400 clamp(3.5rem, 16vw, 9rem)/0.9 Anton, Impact, sans-serif;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .hero p {
+    margin: 0.75rem 0 1.5rem;
+    max-width: 32rem;
+    font-size: 1.15rem;
+    color: #ddd;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 999px;
+  }
+  .btn:hover { filter: brightness(1.1); }
+
+  main { max-width: 56rem; margin: 0 auto; padding: 0 1rem; }
+  section { padding: 3rem 0; }
+  h2 {
+    margin: 0 0 1.5rem;
+    font: 400 2rem/1 Anton, Impact, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .releases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1.5rem;
+  }
+  .release {
+    background: var(--card);
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .release:hover { transform: translateY(-3px); }
+  .release img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+  .release div { padding: 0.75rem 1rem 1rem; }
+  .release strong { display: block; font-size: 1.1rem; }
+  .release span { color: var(--muted); font-size: 0.9rem; }
+
+  iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+
+  .links { display: flex; flex-wrap: wrap; gap: 0.75rem; list-style: none; margin: 0; padding: 0; }
+  .links a {
+    display: block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid #333;
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+
+  footer { padding: 2rem 1rem 3rem; text-align: center; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Headstraight</h1>
+    <p>Angst-themed alternative rock from Alex Clark.</p>
+    <div><a class="btn" href="https://open.spotify.com/artist/2vxXNAqqvKYz8UfREdGEN5">Listen on Spotify</a></div>
+  </header>
+
+  <main>
+    <section id="listen">
+      <h2>Listen</h2>
+      <iframe src="https://open.spotify.com/embed/artist/2vxXNAqqvKYz8UfREdGEN5?theme=0" height="352" loading="lazy" title="Headstraight on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
+
+    <section id="releases">
+      <h2>Releases</h2>
+      <div class="releases">
+        <a class="release" href="https://open.spotify.com/album/0prvxnYJGxKM1k0suNhN6y">
+          <img src="good-nature.jpg" alt="Good Nature album cover" loading="lazy">
+          <div><strong>Good Nature</strong><span>Album · 2006</span></div>
+        </a>
+        <a class="release" href="https://open.spotify.com/album/7q7OFGFtv94JPuLOsn1LXd">
+          <img src="buried.jpg" alt="Buried EP cover" loading="lazy">
+          <div><strong>Buried</strong><span>EP · 2004</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="follow">
+      <h2>Follow</h2>
+      <ul class="links">
+        <li><a href="https://open.spotify.com/artist/2vxXNAqqvKYz8UfREdGEN5">Spotify</a></li>
+        <li><a href="https://www.instagram.com/aclark4life/">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@aclark4life">YouTube</a></li>
+        <li><a href="https://www.facebook.com/headstraightband">Facebook</a></li>
+        <li><a href="https://www.patreon.com/aclark4life">Patreon</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>&copy; Headstraight</footer>
+</body>
+</html>
